@@ -1,21 +1,22 @@
-# CNCVerse CloudStream Extension — Ad-Free Build
+# PulseStream CloudStream Extension — Ad-Free Build
 
-This repository has been modified to remove all advertisement-related code from the compiled plugins:
+This repository has been modified to remove all advertisement-related code from the compiled plugins and rebranded from CNC Verse:
 
 - **Removed:** the `omg10.com` popunder ad opened in an external browser during `loadLinks`.
 - **Removed:** the "Ads Mode" subscription popup nags (`showSubscriptionPopupIfNeeded`).
 - **Removed:** the Telegram promo popup (`showTelegramPopup`) and `SubscriptionHelper.showPopupIfNeeded`.
 - **Removed:** the `SubscriptionManager.cs3` premium ad-removal plugin and its entry from `plugins.json`.
+- **Rebranded:** `CNC Verse` → `PulseStream`, `CNC Verse Mobile` → `PulseStream Mobile`, repo shortcode `cncv` → `ps005`.
 
 The patched builds live in [`builds/`](builds/) with fresh `fileHash`/`fileSize` values in `plugins.json`.
 
-> **Note:** the `plugins.json`/`CNC.json` URLs still point to the original repo. If you host this repo yourself, replace the base URL `https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/` with your own hosting location in both files.
+> **Note:** the `plugins.json`/`PulseStream.json` URLs still point to the original repo. If you host this repo yourself, replace the base URL `https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/` with your own hosting location in both files.
 
 ### To Install Repo (Ad-Free)
 
 Add the repo URL in CloudStream:
 
-        https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/refs/heads/builds/CNC.json
+        https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/refs/heads/builds/PulseStream.json
 
 ---
 
@@ -40,11 +41,11 @@ Cloud Stream ( To install : [View Docs](https://recloudstream.github.io/csdocs/)
 
 1) Direct Install : [Install](https://cutt.ly/qrQa38ja)
 
-2) Short code : cncv
+2) Short code : ps005
 
 3) Manual Install (Copy and Paste in add Repo of Cloud Stream) :
 
-        https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/refs/heads/builds/CNC.json
+        https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/refs/heads/builds/PulseStream.json
 
 <!-- PLUGINS_TABLE_START -->
 
@@ -57,8 +58,8 @@ Cloud Stream ( To install : [View Docs](https://recloudstream.github.io/csdocs/)
 | BilibiliProvider | NivinCNC | Anime, Movies, TvSeries, Documentary | 33 | ⚠️ Geo-Restricted |
 | CastleTvProvider | NivinCNC | Movie, TvSeries | 38 | ✅ Working |
 | CineTvProvider | NivinCNC | Movie, TvSeries | 33 | ✅ Working |
-| CNC Verse | NivinCNC | Movie, TvSeries | 108 | ✅ Working |
-| CNC Verse Mobile | NivinCNC | Movie, TvSeries | 7 | ✅ Working |
+| PulseStream | NivinCNC | Movie, TvSeries | 108 | ✅ Working |
+| PulseStream Mobile | NivinCNC | Movie, TvSeries | 7 | ✅ Working |
 | CricifyProvider | NivinCNC | Live | 65 | ✅ Working |
 | DesiSerialsProvider | NivinCNC | TvSeries | 30 | ✅ Working |
 | DoFlixProvider | NivinCNC | TvSeries, Movie | 33 | ❌ Broken |
