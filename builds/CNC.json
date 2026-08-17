@@ -4,6 +4,6 @@
   "description": "All Language Contents",
   "manifestVersion": 1,
   "pluginLists": [
-    "https://raw.githubusercontent.com/mahdiridoy/pulsestreamRepos/main/builds/PulseStream.json"
+    "https://raw.githubusercontent.com/mahdiridoy/pulsestreamRepos/main/builds/plugins.json"
   ]
 }
