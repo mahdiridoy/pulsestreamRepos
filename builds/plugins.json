@@ -17,7 +17,7 @@
         ],
         "version": 7,
         "internalName": "AniKoto",
-        "url": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/AniKoto.cs3",
+        "url": "https://raw.githubusercontent.com/mahdiridoy/pulsestreamRepos/main/builds/AniKoto.cs3",
         "name": "AniKoto"
     },
     {
@@ -38,7 +38,7 @@
         ],
         "version": 7,
         "internalName": "AnimeSuge",
-        "url": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/AnimeSuge.cs3",
+        "url": "https://raw.githubusercontent.com/mahdiridoy/pulsestreamRepos/main/builds/AnimeSuge.cs3",
         "name": "AnimeSuge"
     },
     {
@@ -61,7 +61,7 @@
         "version": 33,
         "internalName": "BilibiliProvider",
         "description": "Bilibili TV - International streaming platform for anime, movies, and variety shows (bilibili.tv)",
-        "url": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/BilibiliProvider.cs3",
+        "url": "https://raw.githubusercontent.com/mahdiridoy/pulsestreamRepos/main/builds/BilibiliProvider.cs3",
         "name": "BilibiliProvider"
     },
     {
@@ -82,7 +82,7 @@
         "version": 38,
         "internalName": "CastleTvProvider",
         "description": "Castle TV Movies and Series Provider",
-        "url": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/CastleTvProvider.cs3",
+        "url": "https://raw.githubusercontent.com/mahdiridoy/pulsestreamRepos/main/builds/CastleTvProvider.cs3",
         "name": "CastleTvProvider"
     },
     {
@@ -103,7 +103,7 @@
         "version": 33,
         "internalName": "CineTvProvider",
         "description": "Clone of Cinema, Memesapp , FilmTV etc",
-        "url": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/CineTvProvider.cs3",
+        "url": "https://raw.githubusercontent.com/mahdiridoy/pulsestreamRepos/main/builds/CineTvProvider.cs3",
         "name": "CineTvProvider"
     },
     {
@@ -124,7 +124,7 @@
         "version": 108,
         "internalName": "CNC Verse",
         "description": "Netflix, PrimeVideo, Disney+ Hotstar Contents in Multiple Languages",
-        "url": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/CNC Verse.cs3",
+        "url": "https://raw.githubusercontent.com/mahdiridoy/pulsestreamRepos/main/builds/CNC Verse.cs3",
         "name": "CNC Verse"
     },
     {
@@ -145,7 +145,7 @@
         "version": 7,
         "internalName": "CNC Verse Mobile",
         "description": "NetMirror Mobile API",
-        "url": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/CNC Verse Mobile.cs3",
+        "url": "https://raw.githubusercontent.com/mahdiridoy/pulsestreamRepos/main/builds/CNC Verse Mobile.cs3",
         "name": "CNC Verse Mobile"
     },
     {
@@ -165,7 +165,7 @@
         "version": 65,
         "internalName": "CricifyProvider",
         "description": "Watch Live sports and TV channels",
-        "url": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/CricifyProvider.cs3",
+        "url": "https://raw.githubusercontent.com/mahdiridoy/pulsestreamRepos/main/builds/CricifyProvider.cs3",
         "name": "CricifyProvider"
     },
     {
@@ -185,7 +185,7 @@
         "version": 30,
         "internalName": "DesiSerialsProvider",
         "description": "Desi Serials Tv Shows Provider",
-        "url": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/DesiSerialsProvider.cs3",
+        "url": "https://raw.githubusercontent.com/mahdiridoy/pulsestreamRepos/main/builds/DesiSerialsProvider.cs3",
         "name": "DesiSerialsProvider"
     },
     {
@@ -206,7 +206,7 @@
         "version": 33,
         "internalName": "DoFlixProvider",
         "description": "DoFlix Provider for Movies and TV Series",
-        "url": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/DoFlixProvider.cs3",
+        "url": "https://raw.githubusercontent.com/mahdiridoy/pulsestreamRepos/main/builds/DoFlixProvider.cs3",
         "name": "DoFlixProvider"
     },
     {
@@ -226,7 +226,7 @@
         "version": 35,
         "internalName": "EinthusanProvider",
         "description": "Indian Multi-language HD Provider",
-        "url": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/EinthusanProvider.cs3",
+        "url": "https://raw.githubusercontent.com/mahdiridoy/pulsestreamRepos/main/builds/EinthusanProvider.cs3",
         "name": "EinthusanProvider"
     },
     {
@@ -246,7 +246,7 @@
         "version": 31,
         "internalName": "GoldenAudiobook",
         "description": "Audiobooks - Use Picture in Picture or VLC as external player",
-        "url": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/GoldenAudiobook.cs3",
+        "url": "https://raw.githubusercontent.com/mahdiridoy/pulsestreamRepos/main/builds/GoldenAudiobook.cs3",
         "name": "GoldenAudiobook"
     },
     {
@@ -267,7 +267,7 @@
         "version": 33,
         "internalName": "HDOProvider",
         "description": "HDO provider",
-        "url": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/HDOProvider.cs3",
+        "url": "https://raw.githubusercontent.com/mahdiridoy/pulsestreamRepos/main/builds/HDOProvider.cs3",
         "name": "HDOProvider"
     },
     {
@@ -289,7 +289,7 @@
         ],
         "version": 33,
         "internalName": "HDrezkaProvider",
-        "url": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/HDrezkaProvider.cs3",
+        "url": "https://raw.githubusercontent.com/mahdiridoy/pulsestreamRepos/main/builds/HDrezkaProvider.cs3",
         "name": "HDrezkaProvider"
     },
     {
@@ -309,7 +309,7 @@
         "version": 31,
         "internalName": "LibriVoxAudiobook",
         "description": "Audiobooks in public domain",
-        "url": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/LibriVoxAudiobook.cs3",
+        "url": "https://raw.githubusercontent.com/mahdiridoy/pulsestreamRepos/main/builds/LibriVoxAudiobook.cs3",
         "name": "LibriVoxAudiobook"
     },
     {
@@ -329,7 +329,7 @@
         "version": 14,
         "internalName": "LivXowProvider",
         "description": "Watch Live Sports and TV Channels via LivXow",
-        "url": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/LivXowProvider.cs3",
+        "url": "https://raw.githubusercontent.com/mahdiridoy/pulsestreamRepos/main/builds/LivXowProvider.cs3",
         "name": "LivXowProvider"
     },
     {
@@ -349,7 +349,7 @@
         "version": 15,
         "internalName": "M3UPlaylistPlayerProvider",
         "description": "Add your own m3u playlists",
-        "url": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/M3UPlaylistPlayerProvider.cs3",
+        "url": "https://raw.githubusercontent.com/mahdiridoy/pulsestreamRepos/main/builds/M3UPlaylistPlayerProvider.cs3",
         "name": "M3UPlaylistPlayerProvider"
     },
     {
@@ -372,7 +372,7 @@
         "version": 30,
         "internalName": "MLSBDProvider",
         "description": "The largest movie link store in Bangladesh",
-        "url": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/MLSBDProvider.cs3",
+        "url": "https://raw.githubusercontent.com/mahdiridoy/pulsestreamRepos/main/builds/MLSBDProvider.cs3",
         "name": "MLSBDProvider"
     },
     {
@@ -393,7 +393,7 @@
         "version": 45,
         "internalName": "MovieBoxProvider",
         "description": "Multi Language Movies and Series Provider",
-        "url": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/MovieBoxProvider.cs3",
+        "url": "https://raw.githubusercontent.com/mahdiridoy/pulsestreamRepos/main/builds/MovieBoxProvider.cs3",
         "name": "MovieBoxProvider"
     },
     {
@@ -414,7 +414,7 @@
         "version": 47,
         "internalName": "MovieBoxProviderIN",
         "description": "Multi Language Movies and Series Provider (Local homepage based on region)",
-        "url": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/MovieBoxProviderIN.cs3",
+        "url": "https://raw.githubusercontent.com/mahdiridoy/pulsestreamRepos/main/builds/MovieBoxProviderIN.cs3",
         "name": "MovieBoxProviderIN"
     },
     {
@@ -437,7 +437,7 @@
         "version": 16,
         "internalName": "MovieLinkBDProvider",
         "description": "MovieLinkBD - Largest Movie Download Site in Bangladesh",
-        "url": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/MovieLinkBDProvider.cs3",
+        "url": "https://raw.githubusercontent.com/mahdiridoy/pulsestreamRepos/main/builds/MovieLinkBDProvider.cs3",
         "name": "MovieLinkBDProvider"
     },
     {
@@ -457,7 +457,7 @@
         "version": 30,
         "internalName": "MoviezwapProvider",
         "description": "Telugu Movies Provider - Moviezwap",
-        "url": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/MoviezwapProvider.cs3",
+        "url": "https://raw.githubusercontent.com/mahdiridoy/pulsestreamRepos/main/builds/MoviezwapProvider.cs3",
         "name": "MoviezwapProvider"
     },
     {
@@ -478,7 +478,7 @@
         "version": 30,
         "internalName": "PikashowProvider",
         "description": "Stream movies and series from Pikashow",
-        "url": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/PikashowProvider.cs3",
+        "url": "https://raw.githubusercontent.com/mahdiridoy/pulsestreamRepos/main/builds/PikashowProvider.cs3",
         "name": "PikashowProvider"
     },
     {
@@ -498,7 +498,7 @@
         "version": 8,
         "internalName": "PlayFyProvider",
         "description": "Watch Live sports and TV channels via PlayFy",
-        "url": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/PlayFyProvider.cs3",
+        "url": "https://raw.githubusercontent.com/mahdiridoy/pulsestreamRepos/main/builds/PlayFyProvider.cs3",
         "name": "PlayFyProvider"
     },
     {
@@ -518,7 +518,7 @@
         "version": 33,
         "internalName": "PlayZTVProvider",
         "description": "Watch Live TV channels & sports via PlayZTV",
-        "url": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/PlayZTVProvider.cs3",
+        "url": "https://raw.githubusercontent.com/mahdiridoy/pulsestreamRepos/main/builds/PlayZTVProvider.cs3",
         "name": "PlayZTVProvider"
     },
     {
@@ -538,7 +538,7 @@
         "version": 31,
         "internalName": "RadioIndiaProvider",
         "description": "Radio India Provider",
-        "url": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/RadioIndiaProvider.cs3",
+        "url": "https://raw.githubusercontent.com/mahdiridoy/pulsestreamRepos/main/builds/RadioIndiaProvider.cs3",
         "name": "RadioIndiaProvider"
     },
     {
@@ -562,7 +562,7 @@
         "version": 47,
         "internalName": "Rtally",
         "description": "Movie and TV Series provider",
-        "url": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/Rtally.cs3",
+        "url": "https://raw.githubusercontent.com/mahdiridoy/pulsestreamRepos/main/builds/Rtally.cs3",
         "name": "Rtally"
     },
     {
@@ -582,7 +582,7 @@
         "version": 52,
         "internalName": "SKTechProvider",
         "description": "Watch Live sports and TV channels via SK Tech",
-        "url": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/SKTechProvider.cs3",
+        "url": "https://raw.githubusercontent.com/mahdiridoy/pulsestreamRepos/main/builds/SKTechProvider.cs3",
         "name": "SKTechProvider"
     },
     {
@@ -602,7 +602,7 @@
         "version": 18,
         "internalName": "SportzxProvider",
         "description": "Watch Live Sports Events via SportzX",
-        "url": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/SportzxProvider.cs3",
+        "url": "https://raw.githubusercontent.com/mahdiridoy/pulsestreamRepos/main/builds/SportzxProvider.cs3",
         "name": "SportzxProvider"
     },
     {
@@ -624,7 +624,7 @@
         "version": 32,
         "internalName": "StreamFlixProvider",
         "description": "StreamFlix Multi Language Movies and Series Provider",
-        "url": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/StreamFlixProvider.cs3",
+        "url": "https://raw.githubusercontent.com/mahdiridoy/pulsestreamRepos/main/builds/StreamFlixProvider.cs3",
         "name": "StreamFlixProvider"
     },
     {
@@ -644,7 +644,7 @@
         "version": 14,
         "internalName": "SubscriptionManager",
         "description": "Manage your CNCVerse subscription — remove ads with a premium plan",
-        "url": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/SubscriptionManager.cs3",
+        "url": "https://raw.githubusercontent.com/mahdiridoy/pulsestreamRepos/main/builds/SubscriptionManager.cs3",
         "name": "SubscriptionManager"
     },
     {
@@ -664,7 +664,7 @@
         "version": 36,
         "internalName": "TamilDhoolProvider",
         "description": "Tamil Tv Serial/Shows Provider",
-        "url": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/TamilDhoolProvider.cs3",
+        "url": "https://raw.githubusercontent.com/mahdiridoy/pulsestreamRepos/main/builds/TamilDhoolProvider.cs3",
         "name": "TamilDhoolProvider"
     },
     {
@@ -684,7 +684,7 @@
         "version": 30,
         "internalName": "Tamilian",
         "description": "Movies (Tamil)",
-        "url": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/Tamilian.cs3",
+        "url": "https://raw.githubusercontent.com/mahdiridoy/pulsestreamRepos/main/builds/Tamilian.cs3",
         "name": "Tamilian"
     },
     {
@@ -704,7 +704,7 @@
         "version": 38,
         "internalName": "TamilUltraProvider",
         "description": "Indian Live TV Provider",
-        "url": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/TamilUltraProvider.cs3",
+        "url": "https://raw.githubusercontent.com/mahdiridoy/pulsestreamRepos/main/builds/TamilUltraProvider.cs3",
         "name": "TamilUltraProvider"
     },
     {
@@ -725,7 +725,7 @@
         "version": 32,
         "internalName": "Watch32",
         "description": "Watch32 is a Free Movies streaming site with over 10000 movies and TV-Series.",
-        "url": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/Watch32.cs3",
+        "url": "https://raw.githubusercontent.com/mahdiridoy/pulsestreamRepos/main/builds/Watch32.cs3",
         "name": "Watch32"
     },
     {
@@ -747,7 +747,7 @@
         "version": 33,
         "internalName": "XonProvider",
         "description": "Xon Provider for Anime and Cartoons - Tamil, Hindi, Telugu, English, Japanese",
-        "url": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/XonProvider.cs3",
+        "url": "https://raw.githubusercontent.com/mahdiridoy/pulsestreamRepos/main/builds/XonProvider.cs3",
         "name": "XonProvider"
     }
 ]
