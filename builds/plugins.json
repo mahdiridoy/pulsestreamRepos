@@ -43,10 +43,10 @@
     },
     {
         "iconUrl": "https://play-lh.googleusercontent.com/G9s84Cm1TDnKDX2P8nipS_s60cuCnYtjBRRLespF8nivjXmbV9tF1fY37clZhXMLaA",
-        "fileHash": "sha256-PQ1ARQtlWCAQTwvyjp7mDWUXDpl6M4mGnY6DqqhplDg=",
+        "fileHash": "sha256-c4cc08aa660e0bfc1f1b3292f8b0ccb6231ffa472c69bab5c32c42d8e333e7e2",
         "apiVersion": 1,
         "repositoryUrl": "https://github.com/NivinCNC/CNCVerse-Cloud-Stream-Extension",
-        "fileSize": 91561,
+        "fileSize": 89980,
         "status": 3,
         "language": "ta",
         "authors": [
@@ -61,15 +61,15 @@
         "version": 33,
         "internalName": "BilibiliProvider",
         "description": "Bilibili TV - International streaming platform for anime, movies, and variety shows (bilibili.tv)",
-        "url": "https://raw.githubusercontent.com/mahdiridoy/pulsestreamRepos/main/builds/BilibiliProvider.cs3",
+        "url": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/BilibiliProvider.cs3",
         "name": "BilibiliProvider"
     },
     {
         "iconUrl": "https://github.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/raw/refs/heads/master/Logos/CastleTvProvider/icon.png",
-        "fileHash": "sha256-M5rdvCNYvhxlChx4SnV6+FyNdvesIXunFgmQ3UHcba8=",
+        "fileHash": "sha256-bdbac0422d99d59ba1003ca67ebb79bb298d1302f5a47e7008c5476fd3ec2094",
         "apiVersion": 1,
         "repositoryUrl": "https://github.com/NivinCNC/CNCVerse-Cloud-Stream-Extension",
-        "fileSize": 74338,
+        "fileSize": 72477,
         "status": 1,
         "language": "ta",
         "authors": [
@@ -82,15 +82,15 @@
         "version": 38,
         "internalName": "CastleTvProvider",
         "description": "Castle TV Movies and Series Provider",
-        "url": "https://raw.githubusercontent.com/mahdiridoy/pulsestreamRepos/main/builds/CastleTvProvider.cs3",
+        "url": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/CastleTvProvider.cs3",
         "name": "CastleTvProvider"
     },
     {
         "iconUrl": "https://modapk.world/wp-content/uploads/2025/11/Et-90x90.png",
-        "fileHash": "sha256-9gAO3mbUw6ivqWKWZg9QQiSGphOqe0zL4SCe3YYS2y4=",
+        "fileHash": "sha256-0a59709a808d0d11de15a2ed28e74a7f3b798cdcbba8b212fd726c6e3096fa62",
         "apiVersion": 1,
         "repositoryUrl": "https://github.com/NivinCNC/CNCVerse-Cloud-Stream-Extension",
-        "fileSize": 46848,
+        "fileSize": 45669,
         "status": 1,
         "language": "ta",
         "authors": [
@@ -103,15 +103,15 @@
         "version": 33,
         "internalName": "CineTvProvider",
         "description": "Clone of Cinema, Memesapp , FilmTV etc",
-        "url": "https://raw.githubusercontent.com/mahdiridoy/pulsestreamRepos/main/builds/CineTvProvider.cs3",
+        "url": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/CineTvProvider.cs3",
         "name": "CineTvProvider"
     },
     {
         "iconUrl": "https://github.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/raw/refs/heads/master/Logos/CNC%20Verse/icon.png",
-        "fileHash": "sha256-5nOsxA2SYqrQdDjugCTEuwRfUBPjTLcsNJurvze7bBM=",
+        "fileHash": "sha256-b72e7802bb68ecab7a599a1a744cd52321d230256485ba3125413b725e42a0b1",
         "apiVersion": 1,
         "repositoryUrl": "https://github.com/NivinCNC/CNCVerse-Cloud-Stream-Extension",
-        "fileSize": 100640,
+        "fileSize": 98583,
         "status": 1,
         "language": "ta",
         "authors": [
@@ -124,7 +124,7 @@
         "version": 108,
         "internalName": "CNC Verse",
         "description": "Netflix, PrimeVideo, Disney+ Hotstar Contents in Multiple Languages",
-        "url": "https://raw.githubusercontent.com/mahdiridoy/pulsestreamRepos/main/builds/CNC Verse.cs3",
+        "url": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/CNC Verse.cs3",
         "name": "CNC Verse"
     },
     {
