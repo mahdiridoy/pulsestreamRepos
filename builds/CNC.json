@@ -1,9 +1,9 @@
 {
   "name": "CNC Repo(All Language)",
-  "iconUrl": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/refs/heads/builds/cnc.png",
-  "description": "All Language Contents",
+  "iconUrl": "https://raw.githubusercontent.com/mahdiridoy/pulsestreamRepos/main/builds/cnc.png",
+  "description": "All Language Contents (Ad-Free)",
   "manifestVersion": 1,
   "pluginLists": [
-    "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/plugins.json"
+    "https://raw.githubusercontent.com/mahdiridoy/pulsestreamRepos/main/builds/plugins.json"
   ]
 }
