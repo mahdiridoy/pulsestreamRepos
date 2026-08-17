@@ -1,0 +1,9 @@
+{
+    "pluginLists":  [
+                        "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/plugins.json"
+                    ],
+    "description":  "All Language Contents",
+    "name":  "PulseStream",
+    "manifestVersion":  1,
+    "iconUrl":  "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/refs/heads/builds/pulse.png"
+}
