@@ -1,0 +1,245 @@
+name: Build & Deploy CloudStream Extensions
+
+on:
+  push:
+    branches:
+      - main
+
+  workflow_dispatch:
+    inputs:
+      force_patch:
+        description: "Force re-patch all plugins"
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout source repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Java 8
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "8"
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install --quiet requests
+
+      - name: Download smali tools
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          mkdir -p tools/smali
+
+          curl -fL --retry 3 \
+            -o tools/smali/baksmali-2.4.0.jar \
+            "https://bitbucket.org/JesusFreke/smali/downloads/baksmali-2.4.0.jar"
+
+          curl -fL --retry 3 \
+            -o tools/smali/smali-2.4.0.jar \
+            "https://bitbucket.org/JesusFreke/smali/downloads/smali-2.4.0.jar"
+
+          echo "Downloaded tools:"
+          ls -lh tools/smali/
+
+          java -jar tools/smali/baksmali-2.4.0.jar --version
+          java -jar tools/smali/smali-2.4.0.jar --version
+
+      - name: Verify build input
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          test -d builds
+          test -f builds/plugins.json
+
+          COUNT=$(find builds -maxdepth 1 -type f -name '*.cs3' \
+            ! -name 'SubscriptionManager.cs3' | wc -l)
+
+          echo "Found $COUNT plugins"
+
+          if [ "$COUNT" -eq 0 ]; then
+            echo "ERROR: No .cs3 plugins found"
+            exit 1
+          fi
+
+      - name: Patch all plugins
+        id: patch
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          python patch_all.py
+
+          echo "patched=true" >> "$GITHUB_OUTPUT"
+
+      - name: Update plugins.json
+        shell: bash
+        run: |
+          set -euo pipefail
+          python update_plugins_json.py
+
+      - name: Verify plugins and hashes
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          python <<'PY'
+          import json
+          import hashlib
+          import base64
+          from pathlib import Path
+
+          BUILD_DIR = Path("builds")
+
+          with open(BUILD_DIR / "plugins.json", encoding="utf-8") as f:
+              plugins = json.load(f)
+
+          checked = 0
+
+          for plugin in plugins:
+              internal = plugin.get("internalName")
+
+              if not internal:
+                  continue
+
+              if internal == "SubscriptionManager":
+                  continue
+
+              cs3 = BUILD_DIR / f"{internal}.cs3"
+
+              if not cs3.exists():
+                  raise SystemExit(
+                      f"ERROR: Missing plugin file: {cs3}"
+                  )
+
+              data = cs3.read_bytes()
+
+              sha256 = hashlib.sha256(data).digest()
+              calculated_hash = (
+                  "sha256-"
+                  + base64.b64encode(sha256).decode("ascii")
+              )
+
+              calculated_size = len(data)
+
+              expected_hash = plugin.get("fileHash")
+              expected_size = plugin.get("fileSize")
+
+              if calculated_hash != expected_hash:
+                  raise SystemExit(
+                      f"ERROR: Hash mismatch for {internal}\n"
+                      f"Expected: {expected_hash}\n"
+                      f"Actual:   {calculated_hash}"
+                  )
+
+              if calculated_size != expected_size:
+                  raise SystemExit(
+                      f"ERROR: Size mismatch for {internal}\n"
+                      f"Expected: {expected_size}\n"
+                      f"Actual:   {calculated_size}"
+                  )
+
+              checked += 1
+
+          print(f"Verified {checked} plugins successfully.")
+          PY
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Deploy to pulsestreamRepos
+        if: github.event_name == 'push' || inputs.force_patch == true
+        shell: bash
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+        run: |
+          set -euo pipefail
+
+          if [ -z "${GH_PAT:-}" ]; then
+            echo "ERROR: GH_PAT secret is not configured."
+            exit 1
+          fi
+
+          rm -rf target_repo
+
+          git clone \
+            --depth 1 \
+            "https://x-access-token:${GH_PAT}@github.com/mahdiridoy/pulsestreamRepos.git" \
+            target_repo
+
+          cd target_repo
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          rm -rf builds
+          cp -R ../builds ./builds
+
+          git add -A builds
+
+          if git diff --cached --quiet; then
+            echo "No build changes to deploy."
+            exit 0
+          fi
+
+          git commit \
+            -m "chore: update patched plugins $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
+
+          git push origin HEAD:main
+
+          echo "Deployment completed successfully."
+
+      - name: Verify deployment
+        if: github.event_name == 'push' || inputs.force_patch == true
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          echo "Waiting for GitHub raw content..."
+          sleep 10
+
+          for plugin in AniKoto AnimeSuge Rtally; do
+            url="https://raw.githubusercontent.com/mahdiridoy/pulsestreamRepos/main/builds/${plugin}.cs3"
+
+            echo "Checking ${plugin}..."
+
+            HTTP_CODE=$(curl \
+              -L \
+              -s \
+              -o /dev/null \
+              -w "%{http_code}" \
+              --retry 5 \
+              --retry-delay 3 \
+              "$url")
+
+            if [ "$HTTP_CODE" != "200" ]; then
+              echo "ERROR: ${plugin} returned HTTP ${HTTP_CODE}"
+              exit 1
+            fi
+
+            echo "${plugin}: OK"
+          done
+
+          echo "All deployment checks passed."
