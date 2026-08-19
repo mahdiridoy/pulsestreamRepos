@@ -1,9 +1,0 @@
-{
-    "pluginLists": [
-        "https://raw.githubusercontent.com/mahdiridoy/pulsestreamRepos/main/builds/plugins.json"
-    ],
-    "description": "All Language Contents (Ad-Free)",
-    "name": "PulseStream",
-    "manifestVersion": 1,
-    "iconUrl": "https://raw.githubusercontent.com/mahdiridoy/pulsestreamRepos/main/builds/pulse.png"
-}
