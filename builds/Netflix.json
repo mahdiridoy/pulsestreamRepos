@@ -1,8 +1,0 @@
-{
-  "name": "NetMirror",
-  "description": "Netflix, PrimeVideo, Disney+ Hotstar Contents",
-  "manifestVersion": 1,
-  "pluginLists": [
-    "https://raw.githubusercontent.com/mahdiridoy/pulsestreamRepos/builds/plugins.json"
-  ]
-}
