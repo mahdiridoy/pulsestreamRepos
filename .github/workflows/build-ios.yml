@@ -1,0 +1,65 @@
+name: Build iOS IPA
+
+on:
+  push:
+    branches: [main, master]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: macos-15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install XcodeGen
+        run: brew install xcodegen
+
+      - name: Show Xcode version
+        run: xcodebuild -version
+
+      - name: Unpack project zip
+        run: |
+          if [ ! -f pulsestreamios.zip ]; then
+            echo "pulsestreamios.zip not found at repo root"; exit 1
+          fi
+          mkdir -p unpacked
+          unzip -q pulsestreamios.zip -d unpacked
+          echo "Archive contents:"
+          find unpacked -maxdepth 3 -type d | head -20
+
+      - name: Locate project.yml and generate
+        run: |
+          PROJ_DIR="$(dirname "$(find unpacked -name project.yml | head -1)")"
+          echo "Project dir: $PROJ_DIR"
+          cd "$PROJ_DIR"
+          xcodegen generate
+
+      - name: Build (unsigned, generic iOS device)
+        run: |
+          PROJ_DIR="$(dirname "$(find unpacked -name project.yml | head -1)")"
+          cd "$PROJ_DIR"
+          xcodebuild \
+            -project PulseStream.xcodeproj \
+            -scheme PulseStream \
+            -configuration Release \
+            -destination 'generic/platform=iOS' \
+            -derivedDataPath build \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY="" \
+            build
+
+      - name: Package unsigned IPA
+        run: |
+          PROJ_DIR="$(dirname "$(find unpacked -name project.yml | head -1)")"
+          mkdir -p Payload
+          cp -R "$PROJ_DIR/build/Build/Products/Release-iphoneos/PulseStream.app" Payload/
+          zip -r PulseStream-unsigned.ipa Payload
+          rm -rf Payload
+
+      - name: Upload IPA artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: PulseStream-unsigned.ipa
+          path: PulseStream-unsigned.ipa
