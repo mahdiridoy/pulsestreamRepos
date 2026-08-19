@@ -1,0 +1,55 @@
+name: Delete All Repository Files
+
+on:
+  workflow_dispatch:
+    inputs:
+      confirm:
+        description: 'Type DELETE to confirm deleting all repository files'
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  delete-all:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check confirmation
+        if: ${{ github.event.inputs.confirm != 'DELETE' }}
+        run: |
+          echo "Confirmation failed."
+          echo "You must type DELETE exactly."
+          exit 1
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Delete all files
+        run: |
+          echo "Deleting all repository files..."
+
+          git rm -rf --ignore-unmatch .
+
+          # Remove hidden files/directories too, except .git
+          find . -mindepth 1 -maxdepth 1 ! -name '.git' -exec rm -rf {} +
+
+          git status --short
+
+      - name: Commit deletion
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -A
+
+          if git diff --cached --quiet; then
+            echo "Nothing to delete."
+            exit 0
+          fi
+
+          git commit -m "Delete all repository files"
+          git push
