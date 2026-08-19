@@ -33,6 +33,10 @@ jobs:
           PROJ_DIR="$(dirname "$(find unpacked -name project.yml | head -1)")"
           echo "Project dir: $PROJ_DIR"
           cd "$PROJ_DIR"
+          if [ ! -d "PulseStreamTests" ]; then
+            echo "PulseStreamTests missing, creating empty dir"
+            mkdir -p PulseStreamTests
+          fi
           xcodegen generate
 
       - name: Build (unsigned, generic iOS device)
